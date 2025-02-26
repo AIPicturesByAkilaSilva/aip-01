@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pictures by Akila Silva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #394b3f;
+            color: #ffffff;
+        }
+        header {
+            background-color: #2a362c;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery-item {
+            background-color: #2a362c;
+            border: 1px solid #4a5d4e;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a362c;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 18px;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i {
+            font-size: 20px;
+        }
+        #home img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>AI Pictures by Akila Silva</h1>
+        <nav>
+            <a href="#" onclick="showContent('home')">Home</a>
+            <a href="#" onclick="showContent('gallery')">Gallery</a>
+            <a href="#" onclick="showContent('about')">About</a>
+        </nav>
+    </header>
+    <div class="content active" id="home">
+        <!-- Home Screen Image -->
+        <img src="a.jpg" alt="Welcome to AI Pictures by Akila Silva">
+    </div>
+    <div class="content" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Wedding+1" alt="Wedding 1">
+                <p>Wedding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Wedding+2" alt="Wedding 2">
+                <p>Wedding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Wedding+3" alt="Wedding 3">
+                <p>Wedding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Wedding+4" alt="Wedding 4">
+                <p>Wedding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Wedding+5" alt="Wedding 5">
+                <p>Wedding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Preshoot+1" alt="Preshoot 1">
+                <p>Preshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Preshoot+2" alt="Preshoot 2">
+                <p>Preshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Preshoot+3" alt="Preshoot 3">
+                <p>Preshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Preshoot+4" alt="Preshoot 4">
+                <p>Preshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Preshoot+5" alt="Preshoot 5">
+                <p>Preshoot</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Birthday+1" alt="Birthday 1">
+                <p>Birthday</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Birthday+2" alt="Birthday 2">
+                <p>Birthday</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Birthday+3" alt="Birthday 3">
+                <p>Birthday</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Birthday+4" alt="Birthday 4">
+                <p>Birthday</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Birthday+5" alt="Birthday 5">
+                <p>Birthday</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Portrait+1" alt="Portrait 1">
+                <p>Portrait</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Portrait+2" alt="Portrait 2">
+                <p>Portrait</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Portrait+3" alt="Portrait 3">
+                <p>Portrait</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Portrait+4" alt="Portrait 4">
+                <p>Portrait</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200x150?text=Portrait+5" alt="Portrait 5">
+                <p>Portrait</p>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="about">
+        <h2>About Akila Silva</h2>
+        <p>Akila Silva is an innovative photographer who combines traditional techniques with cutting-edge AI technology to create stunning visual masterpieces.</p>
+        <div class="contact-info">
+            <div><i class="fas fa-user"></i> Akila Silva</div>
+            <div><i class="fas fa-phone"></i> 0769235903</div>
+            <div><i class="fas fa-envelope"></i> <a href="mailto:aipictures2015@gmail.com" style="color: white; text-decoration: none;">aipictures2015@gmail.com</a></div>
+            <div><i class="fas fa-map-marker-alt"></i> No.20, Visal Danawwa, Vijitha Mawatha, Nagoda, Kaluthara.</div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 AI Pictures by Akila Silva. All rights reserved.
+    </footer>
+    <script>
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
